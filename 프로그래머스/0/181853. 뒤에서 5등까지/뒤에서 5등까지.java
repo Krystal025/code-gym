@@ -6,9 +6,11 @@ class Solution {
         
         Arrays.sort(num_list);
         
-        for(int i=0; i<5; i++){
-            answer[i] = num_list[i];
-        }
+        // for(int i=0; i<5; i++){
+        //     answer[i] = num_list[i];
+        // }
+        
+        answer = Arrays.copyOfRange(num_list, 0, 5);
         
         return answer;
     }

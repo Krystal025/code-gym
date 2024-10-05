@@ -1,12 +1,15 @@
 class Solution {
     public String solution(String myString) {
-        String answer = "";
+//         String answer = "";
         
-        char[] charArr = myString.toCharArray();
+//         char[] charArr = myString.toCharArray();
         
-        for(char c : charArr){
-            answer += c < 'l' ? "l" : c;
-        }
-        return answer;
+//         for(char c : charArr){
+//             answer += c < 'l' ? "l" : c;
+//         }
+//         return answer;
+        
+        return myString.replaceAll("[a-l]", "l");
+        
     }
 }

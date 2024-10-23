@@ -3,8 +3,8 @@ class Solution {
         
         long total = 0;
         
-        for(int i=0; i<count; i++){
-            total += price * (1 + i);
+        for(int i=1; i<=count; i++){
+            total += price * i;
         }
         
         return money < total ? total-money : 0;

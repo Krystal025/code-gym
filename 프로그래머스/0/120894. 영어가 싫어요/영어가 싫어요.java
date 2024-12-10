@@ -7,15 +7,10 @@ class Solution {
         StringBuilder str = new StringBuilder(numbers);
         String[] numArr = {"zero", "one", "two", "three", "four", 
                            "five", "six", "seven", "eight", "nine"};
-        while(str.length() > 0){
-            for(int i=0; i<10; i++){
-                if(str.toString().startsWith(numArr[i])){
-                    result.append(i);
-                    str.delete(0, numArr[i].length());
-                }
-            }
+        for(int i=0; i<10; i++){
+            numbers = numbers.replaceAll(numArr[i], String.valueOf(i));
         }
-        return Long.parseLong(result.toString());
+        return Long.parseLong(numbers);
         
     }
 }

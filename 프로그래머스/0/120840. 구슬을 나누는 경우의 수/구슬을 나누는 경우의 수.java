@@ -1,7 +1,7 @@
 class Solution {
     public int solution(int balls, int share) {
         
-        if (balls == share || share == 0) return 1;
+        if (balls == share) return 1;
 
         double result = 1; 
 

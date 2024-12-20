@@ -11,6 +11,6 @@ class Solution {
             if(b%2 == 0) b /= 2;
             if(b%5 == 0) b /= 5;
         }        
-        return b==1 || b==2 || b==5 ? 1 : 2;
+        return b == 1 ? 1 : 2;
         }
 }

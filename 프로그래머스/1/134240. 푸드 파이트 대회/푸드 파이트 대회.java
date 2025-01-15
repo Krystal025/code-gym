@@ -10,10 +10,6 @@ class Solution {
                 amount.append(i);
             }
         }
-        StringBuilder result = new StringBuilder(amount);
-        result.append(0);
-        result.append(amount.reverse());
-        
-        return result.toString();
+        return amount.toString() + "0" + amount.reverse().toString();
     }
 }
